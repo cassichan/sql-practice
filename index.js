@@ -24,3 +24,13 @@ db.query('SELECT * FROM Books_cc', (err, results) => {
 })
 
 
+//When pass functionname without parenthesis, referring to function itself.
+
+//function handleResults (err, results) {
+//     if(err) {
+//         console.log(err);
+//     }
+// }
+
+//db.query('SELECT * FROM Books_cc, handleResults)
+
