@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "hello-sql",
   "version": "1.0.0",
   "description": "",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/cassichan/sql-practice#readme",
   "dependencies": {
+    "express": "^4.18.1",
     "mysql2": "^2.3.3"
   }
 }

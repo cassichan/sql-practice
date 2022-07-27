@@ -1,36 +1,9 @@
-//Connect to our mySQL database
-//Run query
-//Console log results
+import express from 'express'
 
-//ES5 way to import library and assign to variable
-const mysql = require('mysql2');
+const app = express();
 
-//Connect to database
-const db = mysql.createConnection({
-    host: '34.170.135.140',
-    user: 'root',
-    password: 'BuildingSoFLo',
-    database: 'swecc-summer-2022',
-});
+app.use(express.json())
 
-//Run simple query
-db.query('SELECT * FROM Books_cc', (err, results) => {
-    if(err) {
-        console.log(err);
-    }
-    //Output results
-    console.log(results);
-    db.end(); //Closes connection to database
+app.get('/', (req, res) => {
+    
 })
-
-
-//When pass functionname without parenthesis, referring to function itself.
-
-//function handleResults (err, results) {
-//     if(err) {
-//         console.log(err);
-//     }
-// }
-
-//db.query('SELECT * FROM Books_cc, handleResults)
-
